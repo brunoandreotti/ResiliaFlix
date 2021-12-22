@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+  background-color: rgb(31, 31, 31);
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+form {
+  background-color: #0c0d0ec9;
+}
+
+#cadastroMedium{
+  font-family: 'JetBrains Mono', monospace;;
+  font-weight: 700;
+  
+  font-size: larger;
+  color: #ffc107;
+  
+  font-size: larger; color: black
+  
+}
+
+#form input {
+  border: 1px solid #ffc107;
+  /* border-bottom: 1px solid #ffc107; */
+  
+  background-color: transparent;
+  outline: none;
+  color: #fcfcf8;
+}
+
+#navbar {
+  background-color: black;
+}
+
+#footer{
+  background-color: black;
+}
+
+.card{
+  margin: 2rem;
+}

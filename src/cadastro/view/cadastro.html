@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="./cadastro.css">
+  <title>Cadastro</title>
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">
+        <img src="../img/output-onlinepngtools.png" width="100" height="" alt="">
+      </a>
+      <ul class="navbar-nav">
+        <li class="btn btn-warning">Login</li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container-xl d-flex justify-content-center flex-column my-5">
+    <medium id="cadastroMedium" class="form-text mb-2 ml-2">Cadastro</medium>
+    <form id='form' class="p-4 rounded-lg d-flex flex-column border border-warning">
+      <div class="row mb-2"> <!-- Nome -->
+        
+
+        <div class="col">
+          <label for="nome" class="text-warning">Nome</label>
+          <input type="text" class="form-control bg-transparent border-warning " id="nome">
+        </div>
+        <div class="col">
+          <label for="sobrenome" class="text-warning">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome">
+        </div>
+      </div>
+      <div class="row mb-2"> <!-- E-mail -->
+        
+
+        <div class="col">
+          <label for="email" class="text-warning">E-mail</label>
+          <input type="text" class="form-control" id="email">
+          <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</small>
+        </div>
+        <div class="col">
+          <label for="email-confirm" class="text-warning">Confirme seu e-mail</label>
+          <input type="text" class="form-control" id="email-confirm">
+        </div>
+      </div>
+      <div class="row mb-2"> <!-- Senha -->
+        
+
+        <div class="col">
+          <label for="senha" class="text-warning">Senha</label>
+          <input type="password" class="form-control" id="senha">
+        </div>
+        <div class="col">
+          <label for="senha-confirm" class="text-warning">Confirme sua senha</label>
+          <input type="password" class="form-control" id="senha-confirm">
+        </div>
+      </div>
+      <div class="row mb-2"> <!-- RG e CPF -->
+        
+
+        <div class="col">
+          <label for="rg" class="text-warning">RG</label>
+          <input type="text" class="form-control" id="rg">
+        </div>
+        <div class="col">
+          <label for="cpf" class="text-warning">CPF</label>
+          <input type="text" class="form-control" id="cpf">
+        </div>
+      </div>
+      </div>
+      <div class="form-row mb-2"><!-- Endereço -->
+        
+
+        <div class="col-md-6">
+          <label for="rua" class="text-warning">Rua</label>
+          <input type="text" class="form-control" id="rua">
+        </div>
+        <div class="col">
+          <label for="numero" class="text-warning">Número</label>
+          <input type="text" class="form-control" id="numero">
+        </div>
+        <div class="col">
+          <label for="bairro" class="text-warning">Bairro</label>
+          <input type="text" class="form-control" id="bairro">
+        </div>
+        <div class="col">
+          <label for="complemento" class="text-warning">Complemento</label>
+          <input type="text" class="form-control" id="complemento">
+        </div>
+      </div>
+
+      <div class="form-row"> <!-- Endereço -->
+        
+
+        <div class="form-group col-md-6">
+          <label for="cidade" class="text-warning">Cidade</label>
+          <input type="text" class="form-control" id="cidade">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="estado" class="text-warning">Estado</label>
+          <input type="text" class="form-control" id="uf">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="cep" class="text-warning">CEP</label>
+          <input type="text" class="form-control" id="cep" maxlength="8" placeholder="Somente números">
+          <small id="cepHelp" class="form-text text-danger">
+
+          </small>
+        </div>
+      </div>
+
+      </div>
+      <button id="button" type="submit" class="btn btn-outline-warning align-self-center mt-3 p-2">Registrar</button>
+    </form>
+
+  </main>
+  <footer class="footer py-3 bg-warning">
+    <div class="container d-flex justify-content-center">
+      <span class="text-dark">ResiliaFlix</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./viewCadastro.js"></script>
+  <script src="../model/modelCadastro.js"></script>
+  <script src="../controller/controllerCadastro.js"></script>
+  
+</body>
+
+</html>
