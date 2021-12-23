@@ -44,12 +44,13 @@
 
         <div class="col">
           <label for="email" class="text-warning">E-mail</label>
-          <input type="text" class="form-control" id="email">
+          <input type="text" class="form-control" id="email" placeholder="email@exemplo.com">
           <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</small>
         </div>
         <div class="col">
           <label for="email-confirm" class="text-warning">Confirme seu e-mail</label>
-          <input type="text" class="form-control" id="email-confirm">
+          <input type="text" class="form-control" id="emailConfirm" placeholder="email@exemplo.com">
+          <small id="emailConfirmHelp" class="form-text text-danger"></small>
         </div>
       </div>
       <div class="row mb-2"> <!-- Senha -->
@@ -61,7 +62,8 @@
         </div>
         <div class="col">
           <label for="senha-confirm" class="text-warning">Confirme sua senha</label>
-          <input type="password" class="form-control" id="senha-confirm">
+          <input type="password" class="form-control" id="senhaConfirm">
+          <small id="senhaConfirmHelp" class="form-text text-danger"></small>
         </div>
       </div>
       <div class="row mb-2"> <!-- RG e CPF -->
@@ -69,11 +71,12 @@
 
         <div class="col">
           <label for="rg" class="text-warning">RG</label>
-          <input type="text" class="form-control" id="rg">
+          <input type="text" class="form-control" id="rg" placeholder="12.345.678-9">
         </div>
         <div class="col">
           <label for="cpf" class="text-warning">CPF</label>
-          <input type="text" class="form-control" id="cpf">
+          <input type="text" class="form-control" id="cpf" placeholder="123.456.789-01">
+          <small id="cpfHelp" class="form-text text-danger"></small>
         </div>
       </div>
       </div>
