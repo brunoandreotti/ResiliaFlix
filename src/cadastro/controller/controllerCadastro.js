@@ -1,5 +1,4 @@
 // VARIABLES
-
 let button = $('#button')
 let cep = $('#cep')
 let rua = $('#rua')
@@ -17,15 +16,15 @@ cep.on('blur', funCEP)
 async function funCEP() {
   var cepValor = cep.val()
   try {
-    let dadosCep = await consultaCep(cepValor)
+    let dadosCep = await ModelCadastro.consultaCep(cepValor)
     if (dadosCep.erro) {
       cepsmall.text('CEP não encontrado!')
-      limpaCamposCEP()
+      ViewCadastro.limpaCamposCEP()
     } else {
-      completaCamposCEP(dadosCep)
+      ViewCadastro.completaCamposCEP(dadosCep)
     }
   } catch {
     cepsmall.text('Valor do CEP inválido!')
-    limpaCamposCEP()
+    ViewCadastro.limpaCamposCEP()
   }
 }
