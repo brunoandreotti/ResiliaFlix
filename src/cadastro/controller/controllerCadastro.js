@@ -49,3 +49,5 @@ function validaCPF() {
 function validaEmail() {
   ViewCadastro.validarEmail(email.val())
 }
+
+
