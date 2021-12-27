@@ -11,7 +11,8 @@ body {
 }
 
 form {
-  background-color: #0c0d0ec9;
+  background-color: rgba(0, 0, 0, 0.609);
+    box-shadow: rgb(0, 0, 0) 10px 10px 20px;
 }
 
 #cadastroMedium{
@@ -26,7 +27,10 @@ form {
 }
 
 #form input {
-  border: 1px solid #ffc107;
+  border: none;
+  border-bottom: 2px solid #ffc107c5;
+  border-radius: 0px;
+  
   /* border-bottom: 1px solid #ffc107; */
   
   background-color: transparent;
@@ -35,11 +39,13 @@ form {
 }
 
 #navbar {
-  background-color: black;
+  
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
 }
 
 #footer{
-  background-color: black;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
+  
 }
 
 .card{
