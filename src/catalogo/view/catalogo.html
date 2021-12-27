@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./catalogo.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div id="modal-card" class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <img id="modal-img" src="" alt="">
+        </div>
+        <div class="row modal-footer border-0">
+          <div class="row">
+            <p id="sinopse" class="col"><b>Sinopse:</b></p>
+          </div>
+          <div class="row d-flex justify-content-space-between">
+            <p id="ano" class="col"><b>Ano:</b></p>
+            <p id="nota" class="col"><b>Nota:</b></p>
+          </div>
+          <div class="row">
+            <p id="elenco"><b>Elenco:</b></p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <div class=" container d-flex flex-wrap justify-content-center" id="filmes">
+
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../model/catalogoModel.js"></script>
+  <script src="../controller/catalogoController.js"></script>
+</body>
+
+</html>
