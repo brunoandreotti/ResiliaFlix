@@ -6,8 +6,12 @@ body {
   background-image: url(../img/back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   
   
+}
+main{
+  height: 100vh;
 }
 
 form {
