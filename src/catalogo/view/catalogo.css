@@ -1,6 +1,38 @@
+body{
+  background-image: url(../fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #modal-card {
   background-color: rgba(0, 0, 0, 0.75);
   box-shadow: rgb(0, 0, 0) 10px 10px 20px;
   color: white;
   border: none;
 }
+
+#modal-img{
+  height: 300px;
+}
+
+.filme-item{
+  transition: 0.3s;
+}
+
+.filme-item:hover{
+  transform: scale(1.03);
+}
+
+#navbar{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
+}
+
+footer{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
+}
+#text-footer{
+  color: white;
+}
+
+
+
