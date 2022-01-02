@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./cadastro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>Cadastro</title>
 </head>
 
@@ -28,8 +29,9 @@
   <main class="container-xl d-flex justify-content-center flex-column my-5">
     <medium id="cadastroMedium" class="form-text mb-2 ml-2">Cadastro</medium>
     <form id='form' class="p-4 rounded-lg d-flex flex-column border border-warning">
-      <div class="row mb-2"> <!-- Nome -->
-        
+      <div class="row mb-2">
+        <!-- Nome -->
+
 
         <div class="col">
           <label for="nome" class="text-warning">Nome</label>
@@ -40,8 +42,9 @@
           <input type="text" class="form-control" id="sobrenome">
         </div>
       </div>
-      <div class="row mb-2"> <!-- E-mail -->
-        
+      <div class="row mb-2">
+        <!-- E-mail -->
+
 
         <div class="col">
           <label for="email" class="text-warning">E-mail</label>
@@ -54,8 +57,9 @@
           <small id="emailConfirmHelp" class="form-text text-danger"></small>
         </div>
       </div>
-      <div class="row mb-2"> <!-- Senha -->
-        
+      <div class="row mb-2">
+        <!-- Senha -->
+
 
         <div class="col">
           <label for="senha" class="text-warning">Senha</label>
@@ -67,8 +71,9 @@
           <small id="senhaConfirmHelp" class="form-text text-danger"></small>
         </div>
       </div>
-      <div class="row mb-2"> <!-- RG e CPF -->
-        
+      <div class="row mb-2">
+        <!-- RG e CPF -->
+
 
         <div class="col">
           <label for="rg" class="text-warning">RG</label>
@@ -81,8 +86,9 @@
         </div>
       </div>
       </div>
-      <div class="row mb-2"><!-- Endereço -->
-        
+      <div class="row mb-2">
+        <!-- Endereço -->
+
 
         <div class="col-6">
           <label for="rua" class="text-warning">Rua</label>
@@ -102,8 +108,9 @@
         </div>
       </div>
 
-      <div class="row"> <!-- Endereço -->
-        
+      <div class="row">
+        <!-- Endereço -->
+
 
         <div class="form-group col-6">
           <label for="cidade" class="text-warning">Cidade</label>
@@ -127,23 +134,29 @@
     </form>
 
   </main>
-  <footer id="footer" class="footer py-3">
+  <footer id='foot' class="footer py-3">
     <div class="container d-flex justify-content-center">
-      <span class="text-warning">ResiliaFlix</span>
+      <span class="text-light">ResiliaFlix - Todos os direitos reservados T10</span>
     </div>
-  </footer>
+    <br><p>Encontre-nos nas redes sociais</p>
+    <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script src="./viewCadastro.js"></script>
   <script src="../model/modelCadastro.js"></script>
   <script src="../controller/controllerCadastro.js"></script>
-  
+
 </body>
 
 </html>
