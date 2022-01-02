@@ -19,6 +19,11 @@ form {
     box-shadow: rgb(0, 0, 0) 10px 10px 20px;
 }
 
+#button{
+  text-decoration: none;
+  color: black;
+}
+
 #cadastroMedium{
   font-family: 'JetBrains Mono', monospace;;
   font-weight: 700;

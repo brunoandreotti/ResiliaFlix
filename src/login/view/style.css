@@ -14,10 +14,12 @@ nav{
 }
 
 body{
-    background-image: url("/src/img/back2.jpg");
+    background-image: url("../../img/back2.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+
 
 .logo{
     width: 8%;
@@ -125,7 +127,7 @@ body{
     text-align: center;
     color: #ffc107c5;
     border-top: rgb(59, 58, 58) solid 8px;
-    background-image: linear-gradient(to bottom, black, rgb(20, 20, 20)); */
+    background-image: linear-gradient(to bottom, black, rgb(20, 20, 20));
 }
 
 .socials{
