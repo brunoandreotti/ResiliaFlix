@@ -63,8 +63,7 @@ function validaEmail() {
 function cadastrar(e) {
   e.preventDefault()
   if (validCEP && validCPF && validSenha && validEmail ) {
-    ViewCadastro.limpaCamposCEP()
-    ViewCadastro.limpaCamposCadastro()
+    
 
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
@@ -82,6 +81,9 @@ function cadastrar(e) {
     cadastroMsg.removeClass('text-danger')
     cadastroMsg.addClass('text-success')
     cadastroMsg.text('Cadastrando usuário...')
+
+    ViewCadastro.limpaCamposCEP()
+    ViewCadastro.limpaCamposCadastro()
 
     setTimeout(() => {
       cadastroMsg.text('Usuário cadastrado com sucesso! Você será redirecionado para a página de login!')
