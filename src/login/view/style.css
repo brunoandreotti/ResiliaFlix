@@ -84,7 +84,7 @@ body{
     font-size: 3.5vh;
 }
 
-.cards button{
+.button-cadastro{
     background-color: #ffc107c5;
     width: 30%;
     height: 5vh;
@@ -92,11 +92,17 @@ body{
     color: white;
     border: none;
     box-shadow: rgb(0, 0, 0) 10px 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.cards button:hover{
-    background-color: #af860afa;
+.button-cadastro:hover{
+    background-color: #8a6a09fa;
     transition: 0.4s;
+    color: white;
 }
 
 #form-login{
