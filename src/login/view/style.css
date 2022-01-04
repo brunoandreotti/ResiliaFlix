@@ -97,6 +97,10 @@ body{
     transition: 0.4s;
 }
 
+#form-login{
+    width: 100%;
+}
+
 .campos{
     border: none;
     width: 80%;
