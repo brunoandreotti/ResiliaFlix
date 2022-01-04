@@ -21,6 +21,17 @@ class ViewCadastro {
     estado.val('')
   }
 
+  static limpaCamposCadastro() {
+    nome.val('')
+    $('#sobrenome').val('')
+    email.val('')
+    confirmaEmail.val('')
+    senha.val('')
+    confirmaSenha.val('')
+    cpfInput.val('')
+    $('#rg').val('')
+  }
+
   static validarCPF(Objcpf) {
     var cpf = Objcpf
     var exp = /\.|\-/g
@@ -41,7 +52,9 @@ class ViewCadastro {
     var digitoGerado = soma1 * 10 + soma2
     if (digitoGerado != digitoDigitado) {
       cpfSmall.text('CPF inválido!')
+      validCPF = false
     } else {
+      validCPF = true
       cpfSmall.text('')
     }
   }
@@ -53,28 +66,34 @@ class ViewCadastro {
       emailSmall.removeClass('text-muted')
       emailSmall.addClass('text-danger')
       emailSmall.text('E-mail inválido')
+      validEmail = false
     } else {
       emailSmall.removeClass('text-danger')
       emailSmall.addClass('text-muted')
       emailSmall.text('Nunca compartilharemos seu e-mail com mais ninguém.')
+      validEmail = true
     }
   }
 
   static validarConfimaEmail() {
     if (email.val() != confirmaEmail.val()) {
       confirmaEmailSmall.text('Confirmação do e-mail inválida!')
+      validEmail = false
     } else {
       confirmaEmailSmall.text('')
+      validEmail = true
     }
   }
 
   static validarConfirmaSenha() {
     if (senha.val() != confirmaSenha.val()) {
       confirmaSenhaSmall.text('Confirmação da senha inválida!')
+      validSenha = false
     } else {
       confirmaSenhaSmall.text('')
+      validSenha = true
     }
   }
 }
 
-ViewCadastro
+
