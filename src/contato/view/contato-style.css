@@ -16,8 +16,8 @@
  }
 
  #navbar{
-   background: black;
- }
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
+}
  
  
  #nav-header{
@@ -43,15 +43,41 @@ main{
     justify-content: space-evenly;
     align-items: center;
  }
- 
- footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    margin-top: 150px;
-    
- }
+   
+ #foot{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #ffc107c5;
+   border-top: rgb(59, 58, 58) solid 8px;
+   background-image: linear-gradient(to bottom, black, rgb(20, 20, 20));
+}
+
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.socials li{
+   margin: 0 10px;
+}
+.socials a{
+   text-decoration: none;
+   color: #dfdfdf;
+}
+.socials a i{
+   font-size: 1.1rem;
+   transition: color .4s ease;
+
+}
+.socials a:hover i{
+   color: rgb(165, 150, 20);
+}
  .card{
     display: flex;
     margin-right: 30px;
