@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <title>Recuperação de Senha</title>
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
+    <title>RESILIAFLIX - Recuperação de Senha</title>
     <!--Fonte-->
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -15,6 +15,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -35,11 +36,11 @@
     <!--Header inicio-->
     <nav id="navbar" class="navbar">
         <div class="container-xl">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.png" width="100" height="" alt="">
+          <a class="navbar-brand" href="../../../index.html">
+            <img src="../../img/logo.png" width="100" height="" alt="">
           </a>
           <ul class="navbar-nav">
-            <li class="btn btn-warning">Login</li>
+            <li ><a class="btn btn-warning" id="button" href="../../../index.html">Login</a></li>
           </ul>
         </div>
       </nav>
@@ -67,7 +68,7 @@
                         <div class="sign-up-accounts">
                             <p class="text-center">Ou conectar</p>
                             <div class="social-accounts d-flex justify-content-center">
-                                <a href="#" title="Facebook"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#" title="Facebook"> <i class="fa fa-facebook" id="face"></i> </a>
                                 <a href="#" title="Twitter"> <i class="fa fa-twitter"></i> </a>
                                 <a href="#" title="Google"> <i class="fa fa-google"></i> </a>
                             </div>
@@ -78,18 +79,23 @@
                 </div>
             </div>
         </div>
-        <!--Footer-->
-        <footer class="bg-light text-center text-lg-start">
-            <!-- Copyright -->
-            
-            <div class="text-center p-3" style="background-color: #FFD000;">
-              © 2020 Copyright:
-              <a class="text-dark" href="#">ResiliaFlix</a>
-            </div>
-            <!-- Copyright -->
-          </footer>
+        
 
     </section>
+
+    <!--Footer-->
+    <footer id='foot' class="footer py-3">
+        <div class="container d-flex justify-content-center">
+          <span class="text-light">ResiliaFlix - Todos os direitos reservados T10</span>
+        </div>
+        <br><p>Encontre-nos nas redes sociais</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </footer>
 
 
     <script src="js/main.js"></script>

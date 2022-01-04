@@ -1,65 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
 
-
 body {
   background-color: rgb(31, 31, 31);
   background-image: url(../../img/back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  
-  
 }
-main{
+main {
   min-height: 100vh;
 }
 
 form {
   background-color: rgba(0, 0, 0, 0.609);
-    box-shadow: rgb(0, 0, 0) 10px 10px 20px;
+  box-shadow: rgb(0, 0, 0) 10px 10px 20px;
 }
 
-#button{
+#button {
   text-decoration: none;
   color: black;
 }
 
-#cadastroMedium{
-  font-family: 'JetBrains Mono', monospace;;
+#cadastroMedium {
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
-  
+
   font-size: larger;
   color: #ffc107;
-  
-  font-size: larger; color: black
-  
+
+  font-size: larger;
+  color: black;
 }
 
 #form input {
   border: none;
   border-bottom: 2px solid #ffc107c5;
   border-radius: 0px;
-  
+
   /* border-bottom: 1px solid #ffc107; */
-  
+
   background-color: transparent;
   outline: none;
   color: #fcfcf8;
 }
 
 #navbar {
-  
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
 }
 
-
-
-.card{
+.card {
   margin: 2rem;
 }
 
-#foot{
-
+#foot {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,25 +63,23 @@ form {
   background-image: linear-gradient(to bottom, black, rgb(20, 20, 20));
 }
 
-.socials{
+.socials {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.socials li{
+.socials li {
   margin: 0 10px;
 }
-.socials a{
+.socials a {
   text-decoration: none;
   color: #dfdfdf;
 }
-.socials a i{
+.socials a i {
   font-size: 1.1rem;
-  transition: color .4s ease;
-
+  transition: color 0.4s ease;
 }
-.socials a:hover i{
+.socials a:hover i {
   color: rgb(165, 150, 20);
 }
