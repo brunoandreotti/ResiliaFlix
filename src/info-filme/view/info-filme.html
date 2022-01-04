@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
             <div class="container-xl">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="../../catalogo/view/catalogo.html">
                 <img src="../../img/logo.png" class="mb-2" width="120px" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItens"
@@ -33,8 +33,8 @@
                   
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Pesquisar filme!" aria-label="Search">
-                  <button class="btn btn-sm btn-outline-warning me-2" type="submit">Pesquisar</button>
+                  <input class="form-control me-2" type="search" id="pesquisaInput" placeholder="Pesquisar filme!" aria-label="Search">
+                  <button class="btn btn-sm btn-outline-warning me-2" id="button" type="submit">Pesquisar</button>
                 </form>
                 <a class="nav-link text-warning px-0" href="#">Sair</a>
       
@@ -46,13 +46,18 @@
 
     <!-- main -->
     <main>
-        <div id="info">
-            <p>ALGUMA COISA</p>
-
-        </div>
-
-        <div id="resultados">
-            <p>ALGUMA COISA</p>
+        <div  id='conteudo' class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+          <div class="m-0 m-sm-5" id="info">
+          
+          </div>
+          <div class='d-flex flex-column  mt-5 text-center text-md-start' id="resultados">
+              <p class="text-light" id="nome"></p>
+              <p class="text-light" id="ano"></p>
+              <p class="text-light" id="duracao"></p>
+              <p class="text-light" id="elenco"></p>
+              <p class="text-light" id="sinopse"></p>
+              <p class="text-light" id="nota"></p>
+          </div>
         </div>
 
     </main>
@@ -82,6 +87,8 @@
 
 
    
-    
+    <script src="../../catalogo/model/catalogoModel.js"></script>
+    <script src="./viewInfoFilme.js"></script>
+    <script src="../controller/controllerInfoFilme.js"></script>
 </body>
 </html>
