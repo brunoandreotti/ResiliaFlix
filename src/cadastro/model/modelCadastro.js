@@ -18,4 +18,3 @@ class ModelCadastro {
     })
 }
 
-ModelCadastro

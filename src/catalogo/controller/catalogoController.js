@@ -1,5 +1,9 @@
 const catalog = new Catalogo()
-const api = new catalogoAPI()
+const api = new CatalogoAPI()
+const pesquisaInput = $('#pesquisar')
+const pesquisaButton = $('#pesquisarButton')
+
+//FUNCTIONS
 
 function preencheFilme() {
   return new Promise((resolve, reject) => {
@@ -8,7 +12,7 @@ function preencheFilme() {
     async function buscaApi() {
       for (let i = 0; i < filmes.length; i++) {
         let filme = await api.buscaFilme('i', filmes[i])
-        console.log(filme)
+        
         $('#filmes')
           .append(`<div data-id="${filme.imdbID}" class="filme-item card my-2 mx-2" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <img src="${filme.Poster}" class="card-img-top" style="height: 350px ; alt="...">
@@ -38,6 +42,21 @@ preencheFilme().then(() => {
     })
   })
 })
+
+function busca(e) {
+  e.preventDefault()
+  if(pesquisaInput.val() != '') {
+    localStorage.setItem('nomeFilme', pesquisaInput.val())
+    pesquisaInput.val('')
+    window.location.assign('../../info-filme/view/info-filme.html')
+  }
+  
+}
+
+// EVENTS
+
+pesquisaButton.click(busca)
+
 
 
 
