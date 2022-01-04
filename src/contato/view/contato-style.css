@@ -8,12 +8,13 @@
  body{
     width: 100%;
     height: 100%;
-    background: url('../img/foto-catalogo.jpg');
+    background: url('../../img/back.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     
  }
+
  #navbar{
    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0,1));
 }
@@ -29,15 +30,11 @@
     
 }
 
-.botao-login{
-    text-decoration: none;
-    display: flex;
-    justify-content:space-evenly;
-    width: 20%;
-    color: black;
-    border-radius: 3px;
-   
+#button{
+   text-decoration: none;
+   color: black;
 }
+
 main{
     display: flex;
     margin-top: 80px;
