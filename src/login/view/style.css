@@ -14,7 +14,7 @@ nav{
 }
 
 body{
-    background-image: url("../../img/back2.jpg");
+    background-image: url('../../img/back2.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -97,6 +97,10 @@ body{
 .cards button:hover{
     background-color: #af860afa;
     transition: 0.4s;
+}
+
+#form-login{
+    width: 100%;
 }
 
 .campos{
