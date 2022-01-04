@@ -14,7 +14,7 @@ nav{
 }
 
 body{
-    background-image: url("/src/img/back2.jpg");
+    background-image: url('../../img/back2.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
