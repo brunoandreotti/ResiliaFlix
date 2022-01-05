@@ -16,7 +16,7 @@ nav{
 body{
     background-image: url('../../img/back2.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
 }
 
 
@@ -166,4 +166,44 @@ body{
 }
 .socials a:hover i{
     color: rgb(165, 150, 20);
+}
+
+@media screen and (max-width:855px ) {
+    
+    .landing1{
+        
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .cards{
+        
+        width: 80%;
+        height: 50vh;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        
+    }
+
+    .landing-padrao{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .landing-text{
+        width: 80%;
+        height: 40vh;
+    }
+
+    #landing-tv{
+        width: 60%;
+    }
+    
+
 }
