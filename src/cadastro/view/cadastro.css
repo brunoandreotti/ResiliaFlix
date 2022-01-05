@@ -1,0 +1,86 @@
+
+
+body {
+  background-color: rgb(31, 31, 31);
+  background-image: url(../../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  min-height: 100vh;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.609);
+  box-shadow: rgb(0, 0, 0) 10px 10px 20px;
+}
+
+#button {
+  text-decoration: none;
+  color: black;
+}
+
+#cadastroMedium {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+
+  font-size: larger;
+  color: #ffc107;
+
+  font-size: larger;
+  color: black;
+}
+
+#form input {
+  border: none;
+  border-bottom: 2px solid #ffc107c5;
+  border-radius: 0px;
+
+  /* border-bottom: 1px solid #ffc107; */
+
+  background-color: transparent;
+  outline: none;
+  color: #fcfcf8;
+}
+
+#navbar {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+}
+
+.card {
+  margin: 2rem;
+}
+
+#foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffc107c5;
+  border-top: rgb(59, 58, 58) solid 8px;
+  background-image: linear-gradient(to bottom, black, rgb(20, 20, 20));
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #dfdfdf;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: rgb(165, 150, 20);
+}
