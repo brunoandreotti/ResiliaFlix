@@ -2,6 +2,18 @@ const catalog = new Catalogo()
 const api = new CatalogoAPI()
 const pesquisaInput = $('#pesquisar')
 const pesquisaButton = $('#pesquisarButton')
+const sairButton = $('#sair')
+const userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+const nomeLogado = $('#nomeUser')
+
+nomeLogado.text(`Olá, ${userLogado.nome}`)
+
+// EVENTS
+
+pesquisaButton.click(busca)
+sairButton.click(sair)
+
+
 
 //FUNCTIONS
 
@@ -53,9 +65,12 @@ function busca(e) {
   
 }
 
-// EVENTS
+function sair(e){
+  e.preventDefault()
+  window.location.assign('../../../index.html')
+}
 
-pesquisaButton.click(busca)
+
 
 
 
