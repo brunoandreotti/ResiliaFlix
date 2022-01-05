@@ -37,7 +37,7 @@
     <nav id="navbar" class="navbar">
         <div class="container-xl">
           <a class="navbar-brand" href="../../../index.html">
-            <img src="../../img/logo.png" width="100" height="" alt="">
+            <img src="../../img/logo.png" width="120" height="35" alt="">
           </a>
           <ul class="navbar-nav">
             <li ><a class="btn btn-warning" id="button" href="../../../index.html">Login</a></li>
@@ -51,10 +51,10 @@
         <div class="row content d-flex justify-content-center align-items-center">
             <div class="cold-md-5">
                 <div class="box shadow bg-white p-4">
-                    <h3 class="mb-4 text-center fs-1">Recupe a sua Senha</h3>
+                    <h3 class="mb-4 text-center fs-1">Recuperar a sua Senha</h3>
                     <form class="mb-3">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control rounded-0" id="floatingInput"
+                            <input onblur="validarEmail(campoEmail.val())" type="email" class="form-control rounded-0" id="floatingInput"
                                 placeholder="name@example.com">
                             <label for="floatingInput">Digite seu e-mail</label>
                         </div>
@@ -63,7 +63,8 @@
                             <label class="form-check-label">Lembre-me</label>
                         </div>
                         <div class="d-grid gap mb-3">
-                            <button type="button" class="btn btn-outline-warning btn-lg ">Enviar</button>
+                            <p id="msgerror"></p>
+                            <button onclick="exibeAviso()" type="button" class="btn btn-outline-warning btn-lg ">Enviar</button>
                         </div>
                         <div class="sign-up-accounts">
                             <p class="text-center">Ou conectar</p>
@@ -98,7 +99,8 @@
     </footer>
 
 
-    <script src="js/main.js"></script>
+    <script src="./js/viewRecSenha.js"></script>
+    <script src="./js/controllerRecSenha.js"></script>
 </body>
 
 </html>

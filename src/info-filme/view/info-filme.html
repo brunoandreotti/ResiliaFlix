@@ -8,8 +8,9 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="./info-style.css">
+  <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
   
-  <title>ResiliaFlix</title>
+  <title>RESILIAFLIX - Busca</title>
 
 </head>
 <body>
@@ -19,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
             <div class="container-xl">
               <a class="navbar-brand" href="../../catalogo/view/catalogo.html">
-                <img src="../../img/logo.png" class="mb-2" width="120px" alt="">
+                <img src="../../img/logo.png" class="mb-2" width="120" height="35" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItens"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
               <div class="collapse navbar-collapse" id="navbarItens">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item p">
-                    <a class="nav-link active text-warning" aria-current="page" href="#">Olá, Usuário</a>
+                    <a class="nav-link active text-warning" aria-current="page" href="#" id="nomeUser"></a>
                   </li>
                   
                 </ul>
@@ -36,7 +37,7 @@
                   <input class="form-control me-2" type="search" id="pesquisaInput" placeholder="Pesquisar filme!" aria-label="Search">
                   <button class="btn btn-sm btn-outline-warning me-2" id="button" type="submit">Pesquisar</button>
                 </form>
-                <a class="nav-link text-warning px-0" href="#">Sair</a>
+                <a class="nav-link text-warning px-0" href="#" id="sair">Sair</a>
       
               </div>
             </div>
@@ -46,7 +47,7 @@
 
     <!-- main -->
     <main>
-        <div  id='conteudo' class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div  id='conteudo' class="d-flex flex-column flex-md-row align-items-center     justify-content-center">
           <div class="m-0 m-sm-5" id="info">
           
           </div>
@@ -57,6 +58,7 @@
               <p class="text-light" id="elenco"></p>
               <p class="text-light" id="sinopse"></p>
               <p class="text-light" id="nota"></p>
+              <p class="text-light fs-2" id="erro"></p>
           </div>
         </div>
 

@@ -37,6 +37,8 @@ function entrar(){
         usuario.focus()
     }else if(usuario.value == userValid.email && senha.value == userValid.senha){
         window.location.assign('../src/catalogo/view/catalogo.html')
+
+        localStorage.setItem('userLogado', JSON.stringify(userValid))
     } else{
         usuario.setAttribute('style', 'border-color: red');
         senha.setAttribute('style', 'border-color: red');
