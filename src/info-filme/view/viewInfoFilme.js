@@ -7,5 +7,16 @@ class ViewInfoFilme {
     elencoFilme.text(`Elenco: ${data.Actors}`)
     sinopseFilme.text(`Sinopse: ${data.Plot}`)
     notaFilme.text(`Nota: ${data.imdbRating}`)
+    $('#erro').text(``)
+  }
+
+  limpaInfoFilme(){
+    divPoster.html(``)
+    nomeFilme2.text(``)
+    anoFilme.text(``)
+    duracaoFilme.text(``)
+    elencoFilme.text(``)
+    sinopseFilme.text(``)
+    notaFilme.text(``)
   }
 }

@@ -10,24 +10,38 @@ const sinopseFilme = $('#sinopse')
 const notaFilme = $('#nota')
 const pesquisaInput = $('#pesquisaInput')
 const button = $('#button')
+const userLogado = JSON.parse(localStorage.getItem('userLogado'))
+const nomeLogado = $('#nomeUser')
+
+nomeLogado.text(`Olá, ${userLogado.nome}`)
 
 if (nomeFilme) {
   catalogo.buscaFilme('t', nomeFilme).then(data => {
-    console.log(data)
-
-    viewInfo.rederizaInfoFilme(data)
-
-    localStorage.removeItem('nomeFilme')
+    if (data.Error) {
+      viewInfo.limpaInfoFilme()
+      $('#erro').text(`Filme não encontrado :(`)
+    } else {
+      viewInfo.rederizaInfoFilme(data)
+      localStorage.removeItem('nomeFilme')
+    }
   })
 }
 
+//EVENTS
+
 button.click(e => {
   e.preventDefault()
+
   if (pesquisaInput.val() != '') {
     catalogo.buscaFilme('t', pesquisaInput.val()).then(data => {
-      console.log(data)
+      if (data.Error) {
+        viewInfo.limpaInfoFilme()
+        $('#erro').text(`Filme não encontrado :(`)
+      } else {
+        console.log(data)
 
-      viewInfo.rederizaInfoFilme(data)
+        viewInfo.rederizaInfoFilme(data)
+      }
     })
   }
 })
