@@ -12,6 +12,7 @@ const pesquisaInput = $('#pesquisaInput')
 const button = $('#button')
 const userLogado = JSON.parse(localStorage.getItem('userLogado'))
 const nomeLogado = $('#nomeUser')
+const sairButton = $('#sair')
 
 nomeLogado.text(`Olá, ${userLogado.nome}`)
 
@@ -28,6 +29,7 @@ if (nomeFilme) {
 }
 
 //EVENTS
+sairButton.click(sair)
 
 button.click(e => {
   e.preventDefault()
@@ -45,3 +47,10 @@ button.click(e => {
     })
   }
 })
+
+//FUNCTIONS
+
+function sair(e){
+  e.preventDefault()
+  window.location.assign('../../../index.html')
+}
