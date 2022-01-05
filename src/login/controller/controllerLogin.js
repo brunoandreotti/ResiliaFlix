@@ -1,4 +1,8 @@
 let email = document.getElementById('email');
+let buttonlogin = document.getElementById('buttonlogin')
+
+buttonlogin.addEventListener('click', entrar)
+
 
 function entrar(){
     let usuario = document.querySelector('#email');

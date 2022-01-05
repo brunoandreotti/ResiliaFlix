@@ -11,8 +11,9 @@
     <title>RESILIAFLIX - Assista e Filmes, Séries e Animes online!</title>
 </head>
 <body>
-<nav>
+<nav class="d-flex justify-content-between">
     <img class='logo' src="./src/img/logo.png">
+    <a href="./src/contato/view/contato.html" class="btn btn-outline-warning me-2 text-decoration-none">Contato</a>
 </nav>
 
 <main>
@@ -28,8 +29,8 @@
             
             <input class='campos' id='senha' type="password" placeholder="Insira sua senha">
         </form>
-        <a><p>Esqueceu sua senha?</p></a>
-        <a class='button-cadastro' onclick='entrar()'>LOGIN</a>
+        <a href="./src/rec-senha/view/recuperacao_index.html" class="text-decoration-none text-light">Esqueceu sua senha?</a>
+        <a class='button-cadastro' id="buttonlogin">LOGIN</a>
     </div>
 
     <div class="cards">
