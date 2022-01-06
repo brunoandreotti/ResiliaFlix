@@ -2,7 +2,7 @@
 <p align="center">
     <img src="./src/img/logo.png" alt="Logo" width="200">
 
-  <h3 align="center">Resiliaflix por <a href="https://www.linkedin.com/in/bruno-andreotti-9384411b4/">Bruno</a>, <a href="https://www.linkedin.com/in/carme-fernandes-30997928/">Carme</a>, <a href="https://www.linkedin.com/in/jonatastalves/">Jonatas</a>, <a href="https://github.com/kaarolfelix">Karol</a> e <a href="https://www.linkedin.com/in/la%C3%ADssa-fernandes-21209016b/">Laíssa</a></h3>
+  <h3 align="center">Resiliaflix por <a href="https://www.linkedin.com/in/bruno-andreotti-9384411b4/" target='_blank'>Bruno</a>, <a href="https://www.linkedin.com/in/carme-fernandes-30997928/" target='_blank'>Carme</a>, <a href="https://www.linkedin.com/in/jonatastalves/" target='_blank'>Jonatas</a>, <a href="https://github.com/kaarolfelix" target='_blank'>Karol</a> e <a href="https://www.linkedin.com/in/la%C3%ADssa-fernandes-21209016b/" target='_blank'>Laíssa</a></h3>
  <br />
   <p align="center">
      Projeto desenvolvido como projeto final do Módulo 2 do curso de Desenvolvedor Web FullStack da <a class="credits" href="https://www.resilia.com.br" target="_blank">Resilia Educação</a>
