@@ -61,7 +61,7 @@ Caso seja buscado um nome de filme inexistente, a mensagem 'Filme não encontrad
 
 # Acessando o projeto
 
-Você pode acessar o projeto <a href="https://brunoandreotti.github.io/ResiliaFlix/"> clicando aqui! </a>
+Você pode acessar o projeto <a href="https://resiliaflix-t10-grupo3.netlify.app/index.html"> clicando aqui! </a>
 
 # Tecnologias utilizadas
 
