@@ -40,23 +40,23 @@ O objetivo do projeto foi criar um site de filmes com a finalidade de colocar em
 
 ### Página de login
 
-      Foi adicionado um sistema de login que verifica se o e-mail é cadastrado, o login somente é efetuado caso o e-mail tenha sido cadastrado.
+Foi adicionado um sistema de login que verifica se o e-mail é cadastrado, o login somente é efetuado caso o e-mail tenha sido cadastrado.
 
 ### Página de cadastro
 
-      Foi criado um sistema de cadastro utilizando localStorage para armazenar o usuário, nesse formulário é feita a validação do e-mail, confirmação do e-mail, confirmação da senha, CPF. Também foi utilizado a API ViaCEP para verificar o campo de CEP e completar os campos de endereço automaticamente!
+Foi criado um sistema de cadastro utilizando localStorage para armazenar o usuário, nesse formulário é feita a validação do e-mail, confirmação do e-mail, confirmação da senha, CPF. Também foi utilizado a API ViaCEP para verificar o campo de CEP e completar os campos de endereço automaticamente!
 
 ### Página de filmes em destaque
 
-      Foram selecionados 12 filmes, seus posteres são exibidos na tela de forma dinâmica, é feita a requição para a API OMDb e após a requisão ser finalizada os posteres são renderizados.
-      Ao clicar no poster de um filme, um modal com informações sobre o filme é exibido, esse modal também é preenchido de forma dinâmica através de um requição feita a cada vez que o poster de um filme é clicado.
-      Também é possível fazer a busca de um filme pelo seu nome.
+Foram selecionados 12 filmes, seus posteres são exibidos na tela de forma dinâmica, é feita a requição para a API OMDb e após a requisão ser finalizada os posteres são renderizados.
+Ao clicar no poster de um filme, um modal com informações sobre o filme é exibido, esse modal também é preenchido de forma dinâmica através de um requição feita a cada vez que o poster de um filme é clicado.
+Também é possível fazer a busca de um filme pelo seu nome.
 
 ### Página de busca/informação de filmes
 
-      Nessa página é possível buscar as informações de um filme utilizando se nome.
-      Para isso foi utilizada a API OMDb, uma requição é feita à API e quando pronta as informações e poster do filme é exibido na tela.
-      Caso seja buscado um nome de filme inexistente, a mensagem 'Filme não encontrado :(' é exibida na tela.
+Nessa página é possível buscar as informações de um filme utilizando se nome.
+Para isso foi utilizada a API OMDb, uma requição é feita à API e quando pronta as informações e poster do filme é exibido na tela.
+Caso seja buscado um nome de filme inexistente, a mensagem 'Filme não encontrado :(' é exibida na tela.
 
 
 # Acessando o projeto
