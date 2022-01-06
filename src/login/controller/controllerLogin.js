@@ -36,7 +36,7 @@ function entrar(){
         msgEmail.innerHTML = 'Insira um usuário e senha válidos'
         usuario.focus()
     }else if(usuario.value == userValid.email && senha.value == userValid.senha){
-        window.location.assign('../src/catalogo/view/catalogo.html')
+        window.location.assign('../../catalogo/view/catalogo.html')
 
         localStorage.setItem('userLogado', JSON.stringify(userValid))
     } else{
